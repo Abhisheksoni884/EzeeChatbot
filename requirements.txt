@@ -1,0 +1,32 @@
+# EzeeChatBot — Python dependencies
+# Install: pip install -r requirements.txt
+
+# Web framework
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+python-multipart==0.0.20  # for Form() support in FastAPI
+
+# LangChain ecosystem
+langchain==0.3.25
+langchain-core==0.3.60
+langchain-groq==0.3.2         # ChatGroq integration (latest)
+langchain-community==0.3.24   # FAISS vector store wrapper
+langchain-huggingface==0.1.2  # HuggingFace embeddings
+langchain-text-splitters==0.3.8
+
+# Vector store
+faiss-cpu==1.10.0
+
+# Embeddings (open-source, local — no API key needed)
+sentence-transformers==4.1.0
+torch==2.7.0                  # CPU-only; remove if using GPU
+
+# HTTP client for URL loading
+requests==2.32.3
+
+# Config management
+pydantic==2.11.4
+pydantic-settings==2.9.1
+
+# Groq SDK (transitive, but pinned for stability)
+groq==0.25.0
