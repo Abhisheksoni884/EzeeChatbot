@@ -61,7 +61,7 @@ cp .env.example .env
 **Verify everything works:**
 
 ```bash
-python test_env.py
+python test_script.py
 ```
 
 **Run the server:**
